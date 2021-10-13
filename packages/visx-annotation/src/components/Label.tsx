@@ -101,7 +101,7 @@ export default function Label({
 
   // if props are provided, they take precedence over context
   const { x = 0, y = 0, dx = 0, dy = 0 } = useContext(AnnotationContext);
-  const height = Math.floor(
+  const height = Math.ceil(
     padding.top + padding.bottom + (titleBounds.height ?? 0) + (subtitleBounds.height ?? 0),
   );
 
